@@ -6,6 +6,7 @@ import { CopyRegular } from '@fluentui/react-icons';
 import { CosmosDBStatus } from '../../api';
 import { HistoryButton, ShareButton } from '../../components/common/Button';
 import { AppStateContext } from '../../state/AppProvider';
+import SidebarContent from '../SidebarContent';
 import myLogo from '../../assets/logo_combo@2x.png';
 import styles from './Layout.module.css';
 
@@ -111,14 +112,14 @@ const Layout = () => {
       </header>
       <Outlet />
       <Panel
-        headerText="Sidebar"
+        headerText="Settings"
         isOpen={isSidebarOpen}
         onDismiss={handleSidebarDismiss}
         closeButtonAriaLabel="Close"
         isLightDismiss
         type={PanelType.smallFixedNear}
       >
-        <p>Sidebar content goes here.</p>
+        <SidebarContent />
       </Panel>
       <Dialog
         onDismiss={handleSharePanelDismiss}
