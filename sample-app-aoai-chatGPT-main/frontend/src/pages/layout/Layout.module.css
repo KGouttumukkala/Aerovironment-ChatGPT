@@ -6,12 +6,14 @@
 
 .header {
   background-color: #f2f2f2;
+  padding: 10px; /* Add some padding to the header */
 }
 
 .headerContainer {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  width: 100%; /* Ensure the header spans the full width */
 }
 
 .headerTitleContainer {
@@ -108,4 +110,11 @@
   .headerIcon {
     margin-left: 26px;
   }
+}
+
+.centerContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

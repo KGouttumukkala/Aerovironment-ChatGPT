@@ -13,6 +13,7 @@ import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 import styles from './Chat.module.css'
 import myLogo from '../../assets/AV_Logo.svg'
+
 import { XSSAllowTags } from '../../constants/sanatizeAllowables'
 
 import {
